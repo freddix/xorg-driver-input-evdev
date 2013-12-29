@@ -1,7 +1,7 @@
 Summary:	X.org input driver for Linux generic event devices
 Name:		xorg-driver-input-evdev
 Version:	2.8.2
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-input-evdev-%{version}.tar.bz2
