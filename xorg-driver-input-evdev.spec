@@ -1,14 +1,15 @@
 Summary:	X.org input driver for Linux generic event devices
 Name:		xorg-driver-input-evdev
-Version:	2.8.2
-Release:	2
+Version:	2.9.0
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-input-evdev-%{version}.tar.bz2
-# Source0-md5:	be7f91905c41bb3c3a0eb54063c7e4bf
+# Source0-md5:	9076ae2646f7aeb30963056e0bbfccf0
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	libevdev-devel
 BuildRequires:	libtool
 BuildRequires:	pkg-config
 BuildRequires:	xorg-proto >= 7.7
@@ -42,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{_libdir}/xorg/modules/*/*.la
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/xorg/modules/*/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
