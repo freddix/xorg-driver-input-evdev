@@ -1,11 +1,11 @@
 Summary:	X.org input driver for Linux generic event devices
 Name:		xorg-driver-input-evdev
-Version:	2.9.1
+Version:	2.9.2
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-input-evdev-%{version}.tar.bz2
-# Source0-md5:	8f73a98e32dccc9d054b54727cc4093f
+# Source0-md5:	99eebf171e6c7bffc42d4fc430d47454
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
